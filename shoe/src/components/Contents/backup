@@ -1,0 +1,1 @@
+<FaBars onClick={toggled} style={{fontSize: "20px, 20px"}}/>

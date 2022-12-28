@@ -1,3 +1,4 @@
+
 .home {
     width: calc(100% - 100px);
     margin-left: 100px;
@@ -33,10 +34,22 @@ header {
 .menu li a:hover:before{
     width: 100%;
 }
+
+                    
 .slider .text {
+    
     width: 40%;
     float: left;
     padding: 50px 0 0 50px;
+}
+.slider .model-shoes {
+
+    float: left;
+}
+.slider .model-shoes Canvas {
+    background-color: black;
+    margin: 0 auto;
+    
 }
 .slider h1 {
     font-size: 60px;
@@ -47,4 +60,47 @@ header {
     line-height: 24px;
     color: var(--color-text-secondary);
     margin: 30px 0 70px;
+}
+.slider a {
+    display: inline-block;
+    padding: 15px 48px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    background-image: linear-gradient(45deg, #d001fe 0%, #1aa1d9 100%);
+    box-shadow: 10px 18px 50px 0 rgba(95, 157, 208, 0.5);
+    transition: all ease 0.2s;
+}
+.slider a:hover{
+    box-shadow: none;
+    margin-top: 5px;
+}
+#about {
+    transition-delay: 5ms;
+    
+}
+.about {
+    position: relative;
+    padding-top: 45.8rem;
+    margin-bottom: 30rem;
+    left: 29.9rem;
+    
+}
+.about h3 {
+    text-decoration: none;
+    text-align: center;
+    font-size: 50px;
+}
+.about p {
+    color: var(--color-text);
+    text-align: center;
+}
+
+.footer {
+    display: block;
+    position: relative;
+    margin-top: 118.9rem;
+    justify-content: center;
 }

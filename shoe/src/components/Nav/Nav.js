@@ -1,8 +1,14 @@
 import React from "react";
+import {FaFacebook} from "react-icons/fa"
+import {FaTwitter} from "react-icons/fa"
+import { FaInstagram } from "react-icons/fa";
+import Footer from "../Footer/Footer"
 import "../Nav/nav.css";
 
-const Nav = () => {
+function Nav () {
+    
     return (
+        <>
         <div className="nav">
             <div className="sidebar">
             <div className="toggle">
@@ -11,13 +17,16 @@ const Nav = () => {
                 <span></span>
             </div>
             <div className="social">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Whatsapp</a>
+                <ul>
+                <li><a href="#"><i className="fab facebook"><FaFacebook/></i></a></li>
+                <li><a href="#"><i className="fab twitter"><FaTwitter/></i></a></li>
+                <li><a href="#"><i className="fab instagram"><FaInstagram/></i></a></li>
+                </ul>
             </div>
             </div>
+            
 
-            <div className="toogle-menu">
+            <div className="toggle-menu">
                 <ul>
                     <li><a href="#">Boolet</a></li>
                     <li><a href="#">Monk</a></li>
@@ -27,7 +36,7 @@ const Nav = () => {
                 </ul>
             </div>
             </div>
-        
+            </>
         
     )
 }
