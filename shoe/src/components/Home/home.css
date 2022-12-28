@@ -1,0 +1,50 @@
+.home {
+    width: calc(100% - 100px);
+    margin-left: 100px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.menu li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 60px;
+}
+.menu li:last-child {
+    margin-right: 0;
+}
+.menu li a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 18px;
+    position: relative;
+}
+.menu li a:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-background-secondary);
+    z-index: -1;
+    transition: var(--transition);
+}
+.menu li a:hover:before{
+    width: 100%;
+}
+.slider .text {
+    width: 40%;
+    float: left;
+    padding: 50px 0 0 50px;
+}
+.slider h1 {
+    font-size: 60px;
+    font-weight: 600;
+}
+.slider p {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-text-secondary);
+    margin: 30px 0 70px;
+}
